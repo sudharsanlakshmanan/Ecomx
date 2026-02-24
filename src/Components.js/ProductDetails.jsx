@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductByIdApi } from "../services/ProductServices";
 import Rating from "../ReusableComponents/Rating";
-import "./ProductDetails.css";
+import "./productDetails.css";
 import CartContext from "../Context/CartContext";
 import Increment from "../ReusableComponents/Increment";
 import Decrement from "../ReusableComponents/Decrement";
