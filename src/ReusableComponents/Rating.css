@@ -1,0 +1,21 @@
+
+
+.rating-wrapper{
+    align-items: center;
+    gap: 60px;
+    margin: 20px 0;
+}
+
+.rating-badge{
+    background-color: blue;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.rating-count{
+    font-size: 12px;
+    color: #878787
+}
