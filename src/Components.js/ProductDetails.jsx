@@ -17,7 +17,7 @@ const ProductDetails = () => {
     fetchProductByIdApi(id)
       .then((data) => setProduct(data))
       .catch((error) =>
-        console.error("Error fetching product details:", error)
+        console.error("Error fetching product details:", error),
       );
   }, [id]);
 
@@ -28,12 +28,10 @@ const ProductDetails = () => {
 
   return (
     <div className="product-details-container">
-
       <div className="image-section">
         <img src={product.image} alt={product.title} />
       </div>
 
-     
       <div className="details-section">
         <h1>{product.title}</h1>
 
@@ -51,13 +49,13 @@ const ProductDetails = () => {
 
         {/* Quantity Controls */}
         {quantity > 0 && (
-        <div className="quantity-box">
-          <Decrement id={product.id} />
-          <span>{quantity}</span>
-          <Increment id={product.id} />
-        </div>
+          <div className="quantity-box">
+            <Decrement id={product.id} />
+            <span>{quantity}</span>
+            <Increment id={product.id} />
+          </div>
         )}
-    
+
         {/* Add to Cart */}
         {quantity === 0 && (
           <button className="cart-btn" onClick={() => addToCart(product)}>
